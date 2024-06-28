@@ -3,12 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/kyled/Desktop/Github/JavaProjects/Lab3Netbeans/Lab3/src/utilities/DictionaryADT.java</file>
-            <file>file:/C:/Users/kyled/Desktop/Github/JavaProjects/Lab3Netbeans/Lab3/src/exceptions/ElementNotFound.java</file>
-            <file>file:/C:/Users/kyled/Desktop/Github/JavaProjects/Lab3Netbeans/Lab3/src/implementations/Dictionary.java</file>
-            <file>file:/C:/Users/kyled/Desktop/Github/JavaProjects/Lab3Netbeans/Lab3/test/implementations/DictionaryTest.java</file>
-            <file>file:/C:/Users/kyled/Desktop/Github/JavaProjects/Lab3Netbeans/Lab3/src/exceptions/DuplicateKeyException.java</file>
-            <file>file:/C:/Users/kyled/Desktop/Github/JavaProjects/Lab3Netbeans/Lab3/src/exceptions/KeyIsNull.java</file>
+            <file>file:/C:/Users/kyled/Desktop/Github/JavaProjects/Lab3_ADT_JunitTest/Lab3/test/implementations/DictionaryTest.java</file>
+            <file>file:/C:/Users/kyled/Desktop/Github/JavaProjects/Lab3_ADT_JunitTest/Lab3/src/implementations/Dictionary.java</file>
         </group>
     </open-files>
 </project-private>

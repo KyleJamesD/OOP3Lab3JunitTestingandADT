@@ -13,8 +13,14 @@ public class Dictionary<K,V> implements DictionaryADT<K,V>
 	private static final int DEFAULT_SIZE = 10;
 	
 	// index indicates pairing, e.g. keys[1] is stored at values[1]
-	private ArrayList<K> keys;
-	private ArrayList<V> values;
+	public ArrayList<K> keys;
+	public ArrayList<V> values;
+        
+        public Dictionary() {
+        this.keys = new ArrayList<>();
+        this.values = new ArrayList<>();
+    }
+        
 
     @Override
     public void insert(K k, V v) {
@@ -118,6 +124,20 @@ public class Dictionary<K,V> implements DictionaryADT<K,V>
         return values.get(itemtofind);
        
     }
+
+    @Override
+    public String toString() {
+        return "Dictionary{" + "keys=" + keys + ", values=" + values + '}';
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
       
 
 }
