@@ -5,6 +5,7 @@
 package implementations;
 import java.util.ArrayList;
 import exceptions.ElementNotFound;
+import exceptions.DuplicateKeyException;
 import exceptions.KeyIsNull;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -70,6 +71,18 @@ public class DictionaryTest<K,V> {
         
         
     }
+    
+    
+     /**
+     * Test of inserting duplicate key
+     */
+    @Test
+    public void testInsertDuplicateKey() throws DuplicateKeyException, KeyIsNull {
+        Dictionary instance = new Dictionary();
+        instance.insert(1,1);
+        instance.insert(1,2);
+    }
+  
 
     /**
      * Test of remove method, of class Dictionary.
@@ -116,6 +129,17 @@ public class DictionaryTest<K,V> {
         
         
     }
+    
+    
+    /**
+     * Test of removing non-existent key
+     */
+    @Test
+    public void testRemoveNonExistentKey() throws KeyIsNull, ElementNotFound{
+        Dictionary instance = new Dictionary();
+        instance.remove(99);
+    }
+    
 
     /**
      * Test of update method, of class Dictionary.
@@ -148,8 +172,19 @@ public class DictionaryTest<K,V> {
         
         assertEquals(expected,actual);
         
-        
     }
+    
+    
+    /**
+     * Test of updating non-existent key
+     */
+    @Test
+    public void testUpdateNonExistentKey() throws KeyIsNull, ElementNotFound{
+        Dictionary instance = new Dictionary();
+        instance.update(99, "NewValue");
+    }
+    
+    
     
     
 
@@ -197,6 +232,16 @@ public class DictionaryTest<K,V> {
         
         
 
+    }
+    
+    
+    /** 
+     * Test of looking up non-existent key
+     */
+    @Test(expected = ElementNotFound.class)
+    public void testLookupNonExistentKey() throws KeyIsNull, ElementNotFound{
+        Dictionary instance = new Dictionary();
+        instance.lookup(99);
     }
     
 }
